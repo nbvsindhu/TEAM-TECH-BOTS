@@ -1,0 +1,32 @@
+.container{
+    margin-top: 30px;
+
+}
+.header{
+    background-image: url(https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.f2{
+    margin-top: 15px;
+   margin-left: 595px;
+   text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2023/02/01/21/40/pink-7761356__340.png);
+    background-repeat: no-repeat;
+    background-size: 125%;
+}
+.info{
+    margin-top: 30px;
+  color: brown;
+  font-size: large;
+}
+.footer{
+    display:flex;
+    justify-content: space-around;
+    margin:10px;
+    background-image: url(https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg);
+}

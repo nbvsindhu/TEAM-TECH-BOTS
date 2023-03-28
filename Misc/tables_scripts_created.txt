@@ -1,0 +1,17 @@
+CREATE TABLE evm_customers (
+  evm_customers_id int NOT NULL AUTO_INCREMENT,
+  full_name varchar(100) DEFAULT ' ',
+  username varchar(20) DEFAULT ' ',
+  city varchar(100) DEFAULT 'Hyderabad',
+  phone varchar(45) DEFAULT ' ',
+  email varchar(255) DEFAULT ' ',
+  pwd varchar(25) DEFAULT '12345',
+  Entered_date timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (evm_customers_id)
+) 
+
+select * from evm_customers
+
+
+##########################################3
+

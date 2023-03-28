@@ -1,0 +1,35 @@
+/* set entire body that is webpage */
+body{
+	padding-top: 25vh;	
+    margin-bottom: 10px;
+    background-image: url('https://img.freepik.com/free-photo/background-with-big-leaves-top_23-2147721636.jpg?w=900&t=st=1679911755~exp=1679912355~hmac=9957d21b83bf57c7f77795cdcd4a7b2129775395926136d7b8559120ca0fe021');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/* set form background colour*/
+form{
+	background: #D5DBDB ;
+}
+/* set padding and size of the form */
+.form-container{
+    margin-top: 5px;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.container-fluid img{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -170px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
+  .submit{
+	  margin-left: 20px;
+	  background-color: blue;
+  }

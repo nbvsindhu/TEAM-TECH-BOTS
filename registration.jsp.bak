@@ -1,0 +1,466 @@
+<%@page language="java" %>
+<%@page import="java.util.*" %>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./registration_css.css">
+    <title>Form</title>
+</head>
+<body>
+<form class="form-container" method="post">
+    <div class="header">
+        <h1 class="f2">Book your services here!</h1>
+    </div>
+    <div class="mid2">
+    <div class="flexbox">
+        <label for="Varieties">Username</label>
+        <input type="text" class="mt-3" name="username" id="num" placeholder="Enter username">
+      </div>
+
+      <div class="flexbox">
+        <label for="Photographers">Event type</label>
+        <div>
+          <input type="radio" name="Event_type" id="1">
+          <label for="1">Marriage</label>
+        </div>
+         <div>
+          <input type="radio" name="Event_type" id="2">
+          <label for="2">Birthday party</label>
+        </div>
+         <div>
+          <input type="radio" name="Event_type" id="3">
+          <label for="3">Meeting</label>
+        </div>
+      </div>
+    </div>
+
+
+      <h1 class="specs">Banquet hall</h1>
+
+      <div class="mid2">
+  
+          <div class="flexbox">
+              <label for="Location">Location</label>
+              <div>
+                  <input type="radio" name="Banquet_hall_Location" id="Hyd">
+                  <label for="Hyd">Hyderabad</label>
+              </div>
+              <div>
+                  <input type="radio" name="Banquet_hall_Location" id="Ban">
+                  <label for="Ban">Bangalore</label>
+              </div>
+              <div>
+                  <input type="radio" name="Banquet_hall_Location" id="Che">
+                  <label for="Che">Chennai</label>
+              </div>
+              <div>
+                  <input type="radio" name="Banquet_hall_Location" id="Mum">
+                  <label for="Mum">Mumbai</label>
+              </div>
+            </div>
+  
+          <div class="flexbox">
+              <label for="Capacity">Capacity</label>
+              <input type="number" class="mt-3" name="Banquet_hall_capacity" id="num" placeholder="Enter number">
+            </div>
+  
+            <div class="flexbox">
+              <label for="Budget">Indoor/Outdoor</label>
+              <div>
+                  <input type="radio" name="Banquet_hall_ID_OD" id="1">
+                  <label for="1">Indoor</label>
+                </div>
+                 <div>
+                  <input type="radio" name="Banquet_hall_ID_OD" id="2">
+                  <label for="2">Outdoor</label>
+                </div>
+                 <div>
+                  <input type="radio" name="Banquet_hall_ID_OD" id="3">
+                  <label for="3">Both</label>
+                </div>
+            </div>
+  
+          <div class="flexbox">
+              <label for="Date">Date</label>
+              <div><input type="date" class="mt-3" name="Banquet_hall_date" id="num" placeholder="Enter number"></div>
+            </div>
+  
+            <div class="flexbox">
+              <label for="Time">Time</label>
+              <div><input type="time" class="mt-3" name="Banquet_hall_time" id="num" placeholder="Enter number"></div>
+            </div>
+  </div>
+            <h1 class="specs">Catering</h1>
+
+            <div class="mid2">
+        
+                <div class="flexbox">
+                    <label for="Type" class="mb-3">Type of Food</label>
+                    <div>
+                        <input type="radio" name="Banquet_hall_time" id="NI">
+                        <label for="NI">Vegetarian</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="Banquet_hall_time" id="SI">
+                        <label for="SI">Non-Vegetarian</label>
+                    </div>
+                  </div>
+        
+                <div class="flexbox">
+                    <label for="Varieties">Number of Plates</label>
+                    <input type="number" class="mt-3" name="No_of_plates" id="num" placeholder="Enter number">
+                  </div>
+        
+                <div class="flexbox">
+                    <label for="Veg" class="mb-3">Number of Varieties</label>
+                    <input type="number" class="mt-3" name="No_of_plates" id="num" placeholder="Enter number">
+                  </div>
+        
+                  <div class="flexbox">
+                    <label for="items">Enter the items</label>
+                    <div>
+                        <textarea id="myTextArea" name="Enter_the_items" rows="4" cols="20"></textarea>
+                    </div>
+                  </div>
+               </div>
+
+               <h1 class="specs">Makeup and Costumes</h1>
+
+    <div class="mid2">
+
+        <div class="flexbox">
+            <label for="Photographers">Dress Type</label>
+            <div>
+              <input type="radio" name="Dress_type" id="1">
+              <label for="1">Saree</label>
+            </div>
+             <div>
+              <input type="radio" name="Dress_type" id="2">
+              <label for="2">Lehanga</label>
+            </div>
+             <div>
+              <input type="radio" name="Dress_type" id="3">
+              <label for="3">Frock</label>
+            </div>
+            <div>
+                <input type="radio" name="Dress_type" id="4">
+                <label for="4">Suit</label>
+              </div>
+              <div>
+                <input type="radio" name="Dress_type" id="5">
+                <label for="5">Dhothi</label>
+              </div>
+          </div>
+
+          <div class="flexbox">
+            <label for="Videographers">Dress Color</label>
+            <div>
+              <input type="radio" name="Dress_colour" id="1">
+              <label for="1">White</label>
+            </div>
+             <div>
+              <input type="radio" name="Dress_colour" id="2">
+              <label for="2">Red</label>
+            </div>
+             <div>
+              <input type="radio" name="Dress_colour" id="3">
+              <label for="3">Pink</label>
+            </div>
+            <div>
+                <input type="radio" name="Dress_colour" id="3">
+                <label for="3">Yellow</label>
+              </div>
+          </div>
+
+          <div class="flexbox">
+            <label for="LEDs">Mehandi</label>
+            <div>
+              <input type="radio" name="Mehandi" id="1">
+              <label for="1">Yes</label>
+            </div>
+             <div>
+              <input type="radio" name="Mehandi" id="2">
+              <label for="2">No</label>
+            </div>
+          </div>
+
+          <div class="flexbox">
+            <label for="Preshoot">Makeup</label>
+            <div>
+              <input type="radio" name="Makeup" id="Yes">
+              <label for="Yes">Yes</label>
+            </div>
+             <div>
+              <input type="radio" name="Makeup" id="No">
+              <label for="No">No</label>
+            </div>
+          </div>
+
+          <div class="flexbox">
+            <label for="Postshoot">Hairstyle</label>
+            <div>
+              <input type="radio" name="Hairstyle" id="Yes">
+              <label for="Yes">Yes</label>
+            </div>
+             <div>
+              <input type="radio" name="Hairstyle" id="No">
+              <label for="No">No</label>
+            </div>
+          </div>
+
+    </div>
+        
+    <h1 class="specs">Decoration</h1>
+
+    <div class="mid2">
+
+          <div class="flexbox">
+            <label for="dining decoration">Decoration Type</label>
+            <div>
+              <input type="radio" name="Decoration_type" id="Yes">
+              <label for="Yes">Flowers</label>
+            </div>
+             <div>
+              <input type="radio" name="Decoration_type" id="No">
+              <label for="No">Artificial Flowers</label>
+            </div>
+            <div>
+                <input type="radio" name="Decoration_type" id="No">
+                <label for="No">Balloons</label>
+              </div>
+          </div>
+
+
+          <div class="flexbox">
+            <label for="wedding gate with passage">Lighting</label>
+            <div>
+              <input type="radio" name="Decoration_lighting" id="Yes">
+              <label for="Yes">Lazer</label>
+            </div>
+             <div>
+              <input type="radio" name="Decoration_lighting" id="No">
+              <label for="No">Flood Light</label>
+            </div>
+            <div>
+                <input type="radio" name="Decoration_lighting" id="No">
+                <label for="No">Normal</label>
+              </div>
+          </div>
+
+          <div class="flexbox">
+            <label for="stage decoration">Waterfall</label>
+            <div>
+              <input type="radio" name="Decoration_waterfall" id="Yes">
+              <label for="Yes">Yes</label>
+            </div>
+             <div>
+              <input type="radio" name="Decoration_waterfall" id="No">
+              <label for="No">No</label>
+            </div>
+          </div>
+
+          <div class="flexbox">
+            <label for="stage decoration">Welcome Board</label>
+            <div>
+              <input type="radio" name="Decoration_welcomeboard" id="Yes">
+              <label for="Yes">Yes</label>
+            </div>
+             <div>
+              <input type="radio" name="Decoration_welcomeboard" id="No">
+              <label for="No">No</label>
+            </div>
+          </div>
+
+    </div>
+    
+    <h1 class="specs">Photography</h1>
+    <div class="mid2">
+     <div class="flexbox">
+         <label for="Photographers">Photography Type</label>
+         <div>
+           <input type="radio" name="Photography_type" id="1">
+           <label for="1">Photoshoot</label>
+         </div>
+          <div>
+           <input type="radio" name="Photography_type" id="2">
+           <label for="2">Vidoeshoot</label>
+         </div>
+          <div>
+           <input type="radio" name="Photography_type" id="3">
+           <label for="3">Both</label>
+         </div>
+       </div>
+
+       <div class="flexbox">
+         <label for="Videographers">Drone Photography</label>
+         <div>
+           <input type="radio" name="Drone_photography" id="1">
+           <label for="1">Yes</label>
+         </div>
+          <div>
+           <input type="radio" name="Drone_photography" id="2">
+           <label for="2">No</label>
+         </div>
+       </div>
+
+       <div class="flexbox">
+         <label for="LEDs">Live Video Stream</label>
+         <div>
+           <input type="radio" name="Live_video_stream" id="1">
+           <label for="1">Yes</label>
+         </div>
+          <div>
+           <input type="radio" name="Live_video_stream" id="2">
+           <label for="2">No</label>
+         </div>
+       </div>
+
+       <div class="flexbox">
+         <label for="Preshoot">Projector Screens</label>
+         <div>
+           <input type="radio" name="Projector_screens" id="Yes">
+           <label for="Yes">Yes</label>
+         </div>
+          <div>
+           <input type="radio" name="Projector_screens" id="No">
+           <label for="No">No</label>
+         </div>
+       </div>
+ </div>
+
+ <h1 class="specs">Entertainments</h1>
+
+ <div class="mid2">
+
+     <div class="flexbox">
+         <label for="Audio">Audio</label>
+         <div>
+           <input type="radio" name="Entertainment_audio" id="1">
+           <label for="1">Band</label>
+         </div>
+          <div>
+           <input type="radio" name="Entertainment_audio" id="2">
+           <label for="2">Orchestra</label>
+         </div>
+       </div>
+
+       <div class="flexbox">
+         <label for="Videographers">Welcome Dance</label>
+         <div>
+           <input type="radio" name="Entertainment_welcomedance" id="1">
+           <label for="1">Classical</label>
+         </div>
+          <div>
+           <input type="radio" name="Entertainment_welcomedance" id="2">
+           <label for="2">Western</label>
+         </div>
+          <div>
+           <input type="radio" name="Entertainment_welcomedance" id="3">
+           <label for="3">Mass</label>
+         </div>
+       </div>
+
+       <div class="flexbox">
+         <label for="LEDs">Shows</label>
+         <div>
+           <input type="radio" name="Entertainment_shows" id="1">
+           <label for="1">Musical Night</label>
+         </div>
+          <div>
+           <input type="radio" name="Entertainment_shows" id="2">
+           <label for="2">Mimicry</label>
+         </div>
+          <div>
+           <input type="radio" name="Entertainment_shows" id="3">
+           <label for="3">Magic Show</label>
+         </div>
+       </div>
+
+       <div class="flexbox">
+         <label for="Preshoot">Bride Groom Dance2</label>
+         <div>
+           <input type="radio" name="Entertainment_shows" id="Yes">
+           <label for="Yes">Yes</label>
+         </div>
+          <div>
+		  <button type="button">Click Me!</button>
+
+           <input type="radio" name="Entertainment_shows" id="No">
+           <label for="No">No</label>
+         </div>
+		 
+       </div>
+	   <a> sindhu</a>
+	   
+	   
+ </div>
+
+  
+
+      </div>
+ 
++
+  
+<%
+   String username = request.getParameter("username");
+   String Event_type = request.getParameter("Event_type");
+   String Banquet_hall_Location = request.getParameter("Banquet_hall_Location");
+   String Banquet_hall_ID_OD = request.getParameter("Banquet_hall_ID_OD");
+   String Banquet_hall_date = request.getParameter("Banquet_hall_date");
+   String Enter_the_items = request.getParameter("Enter_the_items");
+   String No_of_plates = request.getParameter("No_of_plates");
+   String No_of_varieties = request.getParameter("No_of_varieties");
+   String Catering_veg_NV = request.getParameter("Catering_veg_NV");
+   String Dress_type = request.getParameter("Dress_type");
+   
+
+
+   if(username!=null)
+   {
+
+Class.forName("com.mysql.jdbc.Driver");   //For mysql
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bsnldb","bsnl", "bsnl123"); // Mysql
+Statement st = con.createStatement();
+	
+//insert into evm_user_master_data(username,Event_type, Banquet_hall_Location, Banquet_hall_ID_OD, Banquet_hall_date, ) values('test', 'test1', 'Hyd', '123456', 'krishna@gmail.com') // for direct testing
+//int val = st.executeUpdate("insert into evm_user_master_data(full_name,username, city, phone, email) values('test', 'test1', 'Hyd', '123456', 'krishna@gmail.com')");
+  
+String query1 = "insert into evm_user_master_data(username, Event_type, Banquet_hall_Location, Banquet_hall_ID_OD, Banquet_hall_date, Enter_the_items, No_of_plates, No_of_varieties, 
+Catering_veg_NV, Dress_type) 
+values('" 
+	+ username + "', '" 
+	+ Event_type + "', '" 
+	+ Banquet_hall_Location + "', '" 
+	+ Banquet_hall_ID_OD + "', '" 
+	+ Banquet_hall_date + "', '" 
+	+ Enter_the_items + "', '" 
+	+ No_of_plates + "', '" 
+	+ No_of_varieties + "', '" 
+	+ Catering_veg_NV + "', '" 
+	+ Dress_type + "')";
+	
+
+
+  
+	int val = st.executeUpdate(query1); 
+	
+//	int val = st.executeUpdate(query1); 
+	
+                                                         																							 
+out.println("Services Booked successfully.");
+//out.println("Username is : " + username + " and password is: 12345 by default. <br>And change password using change password menu.");
+
+ }
+%>
+
+
+ </body>
+ </html>

@@ -1,0 +1,75 @@
+th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 0;
+  bgcolor: #ffff99;
+  border: 1px solid blue;
+  height: 40px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  table-layout: auto;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 1px;
+  height: 20px;
+  font-size: 12px;
+}
+
+
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid grey;
+  float: left;
+  width: 75%;
+  background:white;
+  
+   border-radius: 25px;
+}
+
+form.example button {
+  float: left;
+  width: 15%;
+  padding: 10px;
+  background: #336EFF;
+  color: white;
+  font-size: 18px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 25px;
+  height:40px;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.label {
+  color: white;
+  padding: 8px;
+  font-family: Arial;
+}
+.w {background-color: white; color: white;} /* hide */
+.f {background-color: black; color: white;} /* yellow */
+.a {background-color: #4CAF50;} /* Green */
+.b {background-color: #2196F3;} /* Blue */
+.c {background-color: #ff9800;} /* Orange */
+.d {background-color: #f44336;} /* Red */ 
+.e {background-color: #e7e7e7; color: black;} /* Gray */ 

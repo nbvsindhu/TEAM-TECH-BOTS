@@ -1,0 +1,74 @@
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2023/02/01/21/40/pink-7761356__340.png);
+    background-repeat: no-repeat;
+    background-size: 250%;
+}
+.header{
+    background-color: lightyellow;
+    background-image: url(https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg);
+    display:flex;
+    margin-bottom: 50px;
+}
+.cam{
+    margin-left: 500px;
+}
+.f2{
+    margin-left: 575px;
+    margin-top: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.mid1{
+    margin-left: 175px;
+    margin-bottom: 50px;
+}
+.req{
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: monospace;
+    font-size: 50px;
+}
+.mid2{
+    display:flex
+}
+.flexbox{
+    width: 200px;
+    padding: 20px 20px;
+    padding-top: 20px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    border-radius: 10%;
+    border: 3px;
+    box-shadow: 5px 5px 5px;
+    background-image: url(https://cdn.pixabay.com/photo/2023/02/01/21/40/pink-7761356__340.png);
+}
+.pl{
+    display: block;
+}
+.vl{
+    display: block;
+}
+.ll{
+    display: block;
+}
+.prl{
+    display: block;
+}
+.pol{
+    display: block;
+}
+button{
+    margin:50px;
+    margin-left: 700px;
+    background-color: #595A5D;
+    font-weight: 500;
+    padding: 10px 10px;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px solid black;
+    color:white;
+}

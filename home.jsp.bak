@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./home_css.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Event</title>
+    <link rel="shortcut icon" href="https://thumbs.dreamstime.com/b/marriage-icon-vector-isolated-white-background-your-web-mobile-app-design-logo-concept-sign-symbol-backgroun-133758338.jpg" 
+    type="image/x-icon">
+      <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+
+
+<%
+        String InputUsername=(String)session.getAttribute("InputUsername");
+
+        //redirect user to login page if not logged in
+        if(InputUsername==null){
+                response.sendRedirect("index.jsp");
+        }
+        %>
+
+
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./project.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Event</title>
+    <link rel="shortcut icon" href="https://thumbs.dreamstime.com/b/marriage-icon-vector-isolated-white-background-your-web-mobile-app-design-logo-concept-sign-symbol-backgroun-133758338.jpg" 
+    type="image/x-icon">
+      <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+<!--navbar-->
+<div class="navbar navbar-expand-sm bg-warning navbar-light mt-5 mb-4">
+<div class="container-fluid">
+<a href="#" class="navbar-brand">
+    <img src="https://images.squarespace-cdn.com/content/v1/60df244e7cdd8439545be644/5146127f-0aa9-40c1-bdb6-e0daf8949686/Anu+logo.PNG" 
+    width="50px"alt="not found">
+</a>
+<button data-bs-target="#menu" data-bs-toggle="collapse" class="navbar-toggler">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<h2>The Planning Paradise</h2>
+<div class="collapse navbar-collapse " id="menu">
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="./index.jsp" class="nav-link">Logout</a>
+        </li>
+        <li class="nav-item">
+            <a href="./cart.jsp" class="nav-link">Cart</a>
+        </li>
+        <li class="nav-item">
+            <a href="./registration.jsp" class="nav-link">AboutUs</a>
+        </li>
+    </ul>
+</div>
+</div>
+</div>
+
+
+    <div class="container"> 
+  <!-- add container -->
+  <div class="container">
+    <!-- carousel -->
+    <div class="carousel slide" data-bs-ride="true" id="images">
+      <!-- indicator -->
+      <div class="carousel-indicators">
+        <button
+          data-bs-target="#images"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button data-bs-target="#images" data-bs-slide-to="1" data-bs-target="#images"></button>
+        <button data-bs-target="#images" data-bs-slide-to="2" data-bs-target="#images"></button>
+        <button data-bs-target="#images" data-bs-slide-to="3" data-bs-target="#images"></button>
+        <button data-bs-target="#images" data-bs-slide-to="4" data-bs-target="#images"></button>
+        <button data-bs-target="#images" data-bs-slide-to="5" data-bs-target="#images"></button>
+      </div>
+
+      <!-- main content -->
+      <div class="carousel-inner">
+        <!-- item-1 -->
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img
+            src="https://images.unsplash.com/photo-1510076857177-7470076d4098?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d2VkZGluZyUyMHZlbnVlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+            class="d-block"
+            width="100%"
+            height="600px"
+            alt=""
+          />
+          <div class="carousel-caption">
+            <h4>Banquet Halls</h4>
+          </div>
+        </div>
+
+        <!-- item-2 -->
+        <div class="carousel-item" data-bs-interval="4000">
+          <img
+            src="https://thumbs.dreamstime.com/b/photographer-camera-hand-looking-lens-bokeo-natural-green-background-120872710.jpg"
+            width="100%"
+            class="d-block"
+            height="600px"
+            alt=""
+          />
+          <div class="carousel-caption">
+            <h4>Photography</h4>
+          </div>
+        </div>
+
+        <!-- item-3 -->
+        <div class="carousel-item" data-bs-interval="1000">
+          <img
+            src="https://www.lux-review.com/wp-content/uploads/2021/11/Catered-Food.jpg"
+            width="100%"
+            class="d-block"
+            height="600px"
+            alt=""
+          />
+          <div class="carousel-caption">
+            <h4>Catering</h4>
+    
+          </div>
+        </div>
+        <!-- item-4 -->
+         <div class="carousel-item" data-bs-interval="1000">
+            <img
+              src="https://blog.inevent.com/wp-content/uploads/2021/05/Blog_10_entertainment_ideas_for_events_that_delight_attendees.png"
+              width="100%"
+              class="d-block"
+              height="600px"
+              alt=""
+            />
+            <div class="carousel-caption">
+              <h4>Entertainment</h4>
+            </div>
+          </div>
+           <!-- item-5 -->
+         <div class="carousel-item" data-bs-interval="1000">
+            <img
+              src="https://www.weddingsutra.com/images/wedding-images/blog-images/mosaic-events-oman/mosaic-events-oman-img1.webp"
+              width="100%"
+              class="d-block"
+              height="600px"
+              alt=""
+            />
+            <div class="carousel-caption">
+              <h4>Decor</h4>
+            </div>
+          </div>
+            <!-- item-6 -->
+         <div class="carousel-item" data-bs-interval="1000">
+            <img
+              src="https://www.discoverlancaster.com/imager/s3_us-east-1_amazonaws_com/lancaster-2019/images/@tiffanysbridalboutiquepa_8ef7ea6302ebfbef14fae837bb7b9c7d.png"
+              width="100%"
+              class="d-block"
+              height="600px"
+              alt=""
+            />
+            <div class="carousel-caption">
+              <h4>Costume and Makeup</h4>
+            </div>
+          </div>
+      </div>
+
+      <!-- controls -->
+      <button
+        class="carousel-control-prev"
+        data-bs-slide="prev"
+        data-bs-target="#images"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        data-bs-slide="next"
+        data-bs-target="#images"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+<div class="parent">
+    <!--class1-->
+  <div class="class1">
+<img src="https://media.istockphoto.com/id/650655146/photo/catering-food-wedding-event-table.jpg?b=1&s=170667a&w=0&k=20&c=W3Gk6qixaUqF_lfIVEAOyL7O9zL99IKcxiO4f5nxQ0c=" alt="not found" width="200px" height="200px">
+<h2>Catering</h2>
+<button class="GFG" 
+onclick="window.location.href = 'http://127.0.0.1:5500/catering.html';">
+    Click Here
+</button>
+  </div>
+<!--class2-->
+  <div class="class1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Xft5xq80pr4wsYszwh3yvHUrMfqMjWFCF9zA_M8A&s" alt="not found" width="200px" height="200px">
+   <h2>Banquet Halls</h2>
+    <button class="GFG" 
+onclick="window.location.href = 'http://127.0.0.1:5500/banquethall.html';">
+    Click Here
+</button>
+    </div>
+    <!--class3-->
+  <div class="class1">
+    <img src="https://thumbs.dreamstime.com/b/pro-photography-equipment-professional-professional-photographer-work-kit-photo-lenses-68626647.jpg" alt="not found" width="200px" height="200px">
+   <h2>Photography</h2>
+    <button class="GFG" 
+    onclick="window.location.href = 'http://127.0.0.1:5500/photography.html';">
+        Click Here
+    </button>
+    </div>
+  <!--class4-->
+  <div class="class1">
+    <img src="https://i0.wp.com/blog.inevent.com/wp-content/uploads/2021/05/Live_music_and_DJs.png?resize=725%2C649&ssl=1" alt="not found" width="200px" height="200px">
+    <h2>Entertainment</h2>
+    <button class="GFG" 
+    onclick="window.location.href = 'http://127.0.0.1:5500/entertainment.html';">
+        Click Here
+    </button>
+    </div>
+     <!--class5-->
+  <div class="class1">
+    <img src="http://www.essence.pk/gallery/floral/03.jpg" alt="not found" width="200px" height="200px">
+   <h2>Decor</h2>
+    <button class="GFG" 
+    onclick="window.location.href = 'http://127.0.0.1:5500/decor.html';">
+        Click Here
+    </button>
+    </div>
+   <!--class6-->
+   <div class="class1">
+    <img src="https://images.squarespace-cdn.com/content/v1/61e9fb2c922c653abaae2fd3/63990ea4-4c70-4bc8-9c02-affedf194775/Best-Houston-Texas-Bridal-Plus-Size-Gowns" alt="not found" width="200px" height="200px">
+    <h2>Costume and Makeup</h2>
+    <button class="GFG" 
+    onclick="window.location.href = 'http://127.0.0.1:5500/costume.html';">
+        Click Here
+    </button>
+    </div>
+
+</div>
+<!--Footer-->
+<div class="footer">
+<div>
+    <p>Get to Know us</p>
+    <ul>
+        <p> <a href="#">About us</a></p>
+        <p> <a href="#">Careers</a></p>
+        <p> <a href="#">Press releases</a></p>
+    </ul>
+</div>
+<div>
+    <p>Connect with us</p><ul>
+        <p><a href="#">Facebook</a></p>
+        <p> <a href="#">Twitter</a></p>
+        <p> <a href="#">Instagram</a></p>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
